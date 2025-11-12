@@ -88,6 +88,7 @@ export const userRegister = async (req: Request, res: Response): Promise<void> =
       maxAge: 24 * 60 * 60 * 1000,
     });
 
+    //this is response go to the client
     res.status(201).json({
       message: "User registered successfully",
       user: {
