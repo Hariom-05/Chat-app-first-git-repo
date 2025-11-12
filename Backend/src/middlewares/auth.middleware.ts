@@ -10,6 +10,7 @@ declare global {
   }
 }
 
+//this is for the user authentication
 export const authUser = (req: Request, res: Response, next: NextFunction): void => {
   try {
     // Get token from cookies
